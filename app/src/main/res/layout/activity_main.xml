@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/triggerBtn"
+        android:layout_below="@+id/tripTitleEditText"
         android:text="Speed: "
         android:textSize="20sp" />
 
@@ -55,7 +55,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"></Button>
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/triggerBtn" />
 
     <TextView
         android:id="@+id/temperatureTextView"
@@ -64,7 +72,41 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/latTextView"
-        android:text="Temp: "
+        android:text="Distance: "
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/takeTaggedSnapshotBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Take tagged Snapshot" />
+
+    <ImageView
+        android:id="@+id/snapshotImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/takeTaggedSnapshotBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:id="@+id/tripTitleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/triggerBtn"
+        android:hint="Enter trip title here..." />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/temperatureTextView" />
 
 </RelativeLayout>
